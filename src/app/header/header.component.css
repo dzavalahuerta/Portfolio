@@ -1,0 +1,23 @@
+.arrow{
+    max-height: 100px;
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+
+    margin-top: 1em;
+
+    font-size: 7em;
+    color: white;
+}
+
+.header{
+    width: 100%;
+}
+
+.tab{
+    width: 100px;
+}
