@@ -3,3 +3,7 @@
     max-width: 25px;
     margin-bottom: 3px;
 }
+
+.z-index{
+    z-index: 999;
+}

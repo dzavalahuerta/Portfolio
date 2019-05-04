@@ -1,0 +1,10 @@
+.main-div{
+    margin: 10em 10em 0 10em;
+    background: rgb(0,0,77);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading-div{
+    display: inline-block;
+    margin-top: 11em;
+}
