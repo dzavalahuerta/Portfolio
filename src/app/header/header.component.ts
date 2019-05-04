@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   scroll(){
     window.scroll({
-      top: 300,
+      top: 690,
       behavior: "smooth"
     });
   }

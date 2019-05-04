@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainContentComponent } from './main-content/main-content.component';
-import { EmailFormComponent } from './footer/email-form/email-form.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { EmailFormComponent } from './footer/email-form/email-form.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    MainContentComponent,
-    EmailFormComponent
+    MainContentComponent
   ],
   imports: [
     BrowserModule
