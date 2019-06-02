@@ -1,0 +1,5 @@
+@media (min-width: 769px) {
+	.sticky-footer{
+		Min-height: calc(100vh - 79px);
+    }
+}
