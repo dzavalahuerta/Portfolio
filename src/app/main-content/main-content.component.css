@@ -1,11 +1,25 @@
-div{
+a{
     margin: 10em auto 0;
     display: table;
+    text-decoration: none;
+    transform-style: preserve-3d;
+    transform: perspective(800px);
 }
 
 img{
+   transform: scale(1);
+   transition-duration: 500ms; 
+}
+
+img:hover{
+    transform: scale(1.04);
+    transition-duration: 1000ms;
+}
+
+img, div{
     height: 300px;
     width: 600px;
+    overflow: hidden;
 }
 
 h2{
@@ -13,19 +27,15 @@ h2{
     color: black;
 }
 
-.cards{
-    width: 49%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+a div, a h2{
+    transition: all 800ms ease;
 }
 
-.img-height{
-    height: 300px;
+a.hidden div{
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(40deg);
 }
-
-#top-container{
-    margin-top: 8em;
-}
-
-#bottom-container{
-    margin-top: 1em;
+a.hidden h2{
+    opacity: 0;
+    transform: translate3d(0, 0, 400px) rotateY(-40deg);
 }
