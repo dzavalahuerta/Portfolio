@@ -1,0 +1,39 @@
+.image-resizer
+  max-height: 25px
+  max-width: 25px
+  margin-bottom: 3px
+
+.z-index
+  z-index: 10000000
+
+li > div[class=link-line]
+  display: table
+  margin: -9px auto 0
+  width: 0%
+  height: 2px
+  background-color: black
+
+a
+  + div
+    animation-name: reverse-link-line
+    animation-duration: 300ms
+    animation-fill-mode: forwards
+  &:hover + div[class=link-line]
+    animation-name: link-line
+    animation-duration: 300ms
+    animation-fill-mode: forwards
+
+@keyframes link-line
+  from
+    width: 0%
+
+  to
+    width: 90%
+
+
+@keyframes reverse-link-line
+  from
+    width: 90%
+
+  to
+    width: 0%

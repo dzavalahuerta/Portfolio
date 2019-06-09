@@ -1,0 +1,36 @@
+a
+  margin: 10em auto 0
+  display: table
+  text-decoration: none
+  transform-style: preserve-3d
+  transform: perspective(800px)
+
+img
+  transform: scale(1)
+  transition-duration: 500ms
+  height: 300px
+  width: 600px
+  overflow: hidden
+  &:hover
+    transform: scale(1.04)
+    transition-duration: 1000ms
+
+div
+  height: 300px
+  width: 600px
+  overflow: hidden
+
+h2
+  margin: 20px 0 0 20px
+  color: black
+
+a
+  div, h2
+    transition: all 800ms ease
+  &.hidden
+    div
+      opacity: 0
+      transform: translate3d(0, 0, 400px) rotateY(40deg)
+    h2
+      opacity: 0
+      transform: translate3d(0, 0, 400px) rotateY(-40deg)

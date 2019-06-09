@@ -1,0 +1,97 @@
+$circle-color: #000000
+  
+.header
+  width: 100%
+
+h1
+  text-align: center
+  margin-top: .5em
+  font-size: 7em
+  font-family: arial
+  font-weight: 900
+  color: black
+
+.arrow
+  max-height: 100px
+  max-width: 100px
+  display: block
+  margin: 2.5em auto 0 auto
+  cursor: pointer
+
+.animation
+  z-index: -9
+  height: 35vmin
+  width: 35vmin
+  animation: orbit 20s linear infinite
+
+.animation2
+  z-index: -10
+  height: 45vmin
+  width: 45vmin
+  animation: orbit2 20s linear infinite
+
+.circles
+  position: absolute
+  margin: 0 auto
+  top: 180px
+  left: 550px
+  transform: translate3D(-50%, -50%, 0)
+  color: red
+
+.circle
+  box-sizing: border-box
+  position: absolute
+  width: 100%
+  height: 100%
+  border-radius: 90% 128% 125% 124%/125% 120% 127% 125%
+  &:nth-child(1)
+    transform-origin: 50% (-0.3%) 50%
+    animation: spin1 5s linear infinite
+    background: $circle-color
+  &:nth-child(2)
+    transform-origin: 50% 50% (+0.3%)
+    animation: spin2 5s linear infinite
+    background: $circle-color
+  &:nth-child(3)
+    transform-origin: 50% (+0.3%) 50%
+    animation: spin3 5s linear infinite
+    background: $circle-color
+
+@keyframes spin1
+  0%
+    transform: rotate(0)
+
+  100%
+    transform: rotate(360deg)
+
+
+@keyframes spin2
+  0%
+    transform: rotate(-144deg)
+
+  100%
+    transform: rotate(216deg)
+
+
+@keyframes spin3
+  0%
+    transform: rotate(216deg)
+
+  100%
+    transform: rotate(-144deg)
+
+
+@keyframes orbit
+  from
+    transform: rotate(0deg) translateX(175px)
+
+  to
+    transform: rotate(360deg) translateX(175px)
+
+
+@keyframes orbit2
+  from
+    transform: rotate(180deg) translateX(175px)
+
+  to
+    transform: rotate(540deg) translateX(175px)
