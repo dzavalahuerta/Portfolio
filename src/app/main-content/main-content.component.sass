@@ -1,36 +1,49 @@
-a
+=small-screen
+  @media (max-width: 850px)
+    @content
+  
+#nasaProjectLink
   margin: 10em auto 0
+
+a
+  margin: 4em auto 0
   display: table
   text-decoration: none
   transform-style: preserve-3d
   transform: perspective(800px)
-
-img
-  transform: scale(1)
-  transition-duration: 500ms
-  height: 300px
-  width: 600px
-  overflow: hidden
-  &:hover
-    transform: scale(1.04)
-    transition-duration: 1000ms
-
-div
-  height: 300px
-  width: 600px
-  overflow: hidden
-
-h2
-  margin: 20px 0 0 20px
-  color: black
-
-a
-  div, h2
-    transition: all 800ms ease
+  +small-screen
+    width: 90%
   &.hidden
-    div
-      opacity: 0
+    .projects
+      visibility: hidden
       transform: translate3d(0, 0, 400px) rotateY(40deg)
-    h2
-      opacity: 0
+    .projects-info
+      visibility: hidden
       transform: translate3d(0, 0, 400px) rotateY(-40deg)
+  .projects
+    width: 800px
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+    overflow: hidden
+    transition: all 800ms ease
+    +small-screen
+      width: 100%
+    img
+      transform: scale(1)
+      transition-duration: 500ms
+      width: 100%
+      overflow: hidden
+      &:hover
+        transform: scale(1.04)
+        transition-duration: 1000ms
+
+  .projects-info
+    transition: all 800ms ease
+    display: flex
+    align-items: center
+    h2
+      margin: 20px 0 0 20px
+      color: black
+    a
+      height: 25px
+      width: 25px
+      margin: 20px 0 0 10px
