@@ -4,6 +4,6 @@ Check out the projects I have linked in my Portfolio on https://dzavalahuerta.gi
 
 ## Built with:
 
-Angular
-Sass
-Bootstrap
+* Angular
+* Sass
+* Bootstrap
